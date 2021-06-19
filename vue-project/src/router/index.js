@@ -1,6 +1,9 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
+import Dog from '../views/Dog.vue'
+import Dashboard from '../views/Dashboard.vue'
+// import { component } from 'vue/types/umd'
 
 Vue.use(VueRouter)
 
@@ -19,6 +22,17 @@ const routes = [
     component: function () {
       return import(/* webpackChunkName: "about" */ '../views/About.vue')
     }
+  },
+  {
+    path: '/dog',
+    name: 'Dog',
+    component: Dog
+  },
+
+  {
+    path: '/dashboard',
+    name: 'Dashboard',
+    component: Dashboard
   }
 ]
 
