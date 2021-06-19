@@ -26,6 +26,7 @@
     class="mx-auto"
   >
     <v-navigation-drawer permanent>
+
       <v-list-item>
         <v-list-item-content>
           <v-list-item-title class="text-h6">
@@ -34,31 +35,37 @@
         </v-list-item-content>
       </v-list-item>
 
-      <v-divider></v-divider>
-
       <v-list
         dense
         nav
       >
-        <v-list-item>
+        <v-list-item
+         to = "/dashboard"
+        >
          <v-list-item-content>
             <v-list-item-title>Dashboard</v-list-item-title>
          </v-list-item-content>
         </v-list-item>
 
-        <v-list-item>
+        <v-list-item
+         to = "/dog"
+        >
          <v-list-item-content>
             <v-list-item-title>Dog</v-list-item-title>
          </v-list-item-content>
         </v-list-item>
 
-        <v-list-item>
+        <v-list-item
+         to = "/"
+        >
          <v-list-item-content>
             <v-list-item-title>Home</v-list-item-title>
          </v-list-item-content>
         </v-list-item>
 
-        <v-list-item>
+        <v-list-item
+         to = "/about"
+        >
          <v-list-item-content>
             <v-list-item-title>About</v-list-item-title>
          </v-list-item-content>
